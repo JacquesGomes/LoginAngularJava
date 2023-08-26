@@ -1,0 +1,14 @@
+<div class="container">
+  <h2>Criar conta</h2>
+  <form class="form">
+    <label for="username">Usuário:</label>
+    <input type="text" id="username" name="username" [(ngModel)]="username">
+  
+    <label for="password">Senha:</label>
+    <input type="password" id="password" name="password" [(ngModel)]="password">
+  
+    <button (click)="createAccount()">Criar conta</button>
+  </form>
+
+  <p class="redirect">Já tem uma conta? <a (click)="goToLogin()">Login</a></p>
+</div>
